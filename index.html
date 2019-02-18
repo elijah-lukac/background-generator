@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gradient Background</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body id="gradient">
+	<h1>Gradient Generator</h1>
+	
+		<input class="color1" type="color" name="color1" value="#BA96B9">
+		<input class="color2" type="color" name="color2" value="#32578D">
+		<br>
+
+		<input type="text" value="" id="cssCode" READONLY>
+		<br>
+	
+	<form>
+
+	<input type="radio" name=gradient-type" id="linear-rl" checked="true"><label for="linear-rl"><span>Left to Right</span></label>
+
+	<input type="radio" name=gradient-type" id="linear-tb"><label for="linear-tb"><span>Top to Bottom</span></label>
+
+	<input type="radio" name=gradient-type" id="radial"><label for="radial"><span>Radial</span></label>
+
+	</form><br><br>
+
+	<div class="tooltip">
+		<button id="left"><span class="tooltiptext">Switch Left Color</span><i class="fas fa-angle-left"></i></button>
+	</div>
+
+	<div class="tooltip">
+		<button id="random"><span class="tooltiptext">New Random Gradient</span>Generate <i class="fas fa-random"></i></button>
+	</div>
+
+	<div class="tooltip">
+		<button id="swap">Swap <i class="fas fa-exchange-alt"><span class="tooltiptext">Swap Colors</span></i></button>
+	</div>
+
+	<div class="tooltip">
+		<button id="copyGrad" onmouseout="outFunc()">Copy <i class="far fa-copy"><span class="tooltiptext" id="myTooltip">Copy to clipboard</span></i></button>
+	</div>
+
+	<div class="tooltip">
+		<button id="right"><span class="tooltiptext">Switch Right Color</span><i class="fas fa-angle-right"></i></button>
+	</div>
+	
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
